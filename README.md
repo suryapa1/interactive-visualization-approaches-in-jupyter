@@ -19,9 +19,9 @@ You will need to have Docker installed on your system to create images and run c
 
 1) Clone the repository for the class either using the UI or your terminal (see above)..
 
-2) Once you have Docker installed, type the following on your terminal to create a Docker image: `docker build -t NAME .` (replace `NAME`, here and in next step, with what you want to call it. Note the period)
+2) Once you have Docker installed, type the following on your terminal to create a Docker image: `docker build -t jupyter_widgets .` (replace `NAME`, here and in next step, with what you want to call it. Note the period)
 
 3) That will take a little while to create a Docker image, but once completed, you can run your server with the following:
-`docker run -p 8888:8888 NAME`
+`sh docker_run.sh`
 
-4) Head to `localhost:8888` in your browser and you will be able to access the Jupyter Notebooks.
+4) Head to `localhost:8888` in your browser (copy the token from the command prompt) and you will be able to access the Jupyter Notebooks.
