@@ -19,9 +19,9 @@ You will need to have Docker installed on your system to create images and run c
 
 1) Clone the repository for the class either using the UI or your terminal (see above)..
 
-2) Once you have Docker installed, type the following on your terminal to create a Docker image: `docker build -t jupyter_widgets .`
+2) Once you have Docker installed, type the following on your terminal to create a Docker image: `docker build -t NAME .` (where NAME is the name of the docker image)
 
 3) That will take a little while to create a Docker image, but once completed, you can run your server with the following:
-`sh docker_run.sh`
+`docker run -v $PWD/notebooks:/home/jovyan -p 8888:8888 NAME` (where NAME is the name of the docker image created in the previous step)
 
-4) Head to `localhost:8888` in your browser (copy the token from the command prompt) and you will be able to access the Jupyter Notebooks.
+4) Head to `localhost:8888` in your browser (copy the full url with the token from the command prompt) and you will be able to access the Jupyter Notebooks.
