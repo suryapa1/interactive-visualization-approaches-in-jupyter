@@ -22,6 +22,6 @@ You will need to have Docker installed on your system to create images and run c
 2) Once you have Docker installed, type the following on your terminal to create a Docker image: `docker build -t NAME .` (where NAME is the name of the docker image)
 
 3) That will take a little while to create a Docker image, but once completed, you can run your server with the following:
-`docker run -v $PWD/notebooks:/home/jovyan -p 8888:8888 NAME` (where NAME is the name of the docker image created in the previous step)
+`docker run -p 8888:8888 NAME` (where NAME is the name of the docker image created in the previous step)
 
 4) Head to `localhost:8888` in your browser (copy the full url with the token from the command prompt) and you will be able to access the Jupyter Notebooks.
